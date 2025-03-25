@@ -1,0 +1,32 @@
+.nav-list  a {
+  width: 100%;
+  text-align: left;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.title {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(202, 240, 142);
+}
+.t2 {
+  color: rgb(253, 197, 183);
+  font-size: 22px;
+  margin-left: 15%;
+}

@@ -1,0 +1,38 @@
+<!-- <p-toast></p-toast> -->
+<div id="page" class="back">
+<mat-card>
+  <mat-card-title><p class="h4">LOGIN</p></mat-card-title>
+  <mat-card-content>
+  <div class="form row col-sm-6" style="max-width:350px;">
+    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" [(ngModel)]="form.username" #username="ngModel"
+          required [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" />
+        <div *ngIf="f.submitted && username.invalid">
+          <div class="error-field" *ngIf="f.controls['username'].errors.required">Username is required</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="form.password"
+         #password="ngModel" required minlength="6" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }"/>
+        <div *ngIf="f.submitted && password.invalid">
+          <div class="error-field" *ngIf="f.controls['password'].errors.required">Password is required</div>
+          <div class="error-field" *ngIf="f.controls['password'].errors.minlength">Password must be at least 6 characters</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="LOGIN" class="btn btn-primary">
+        <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger">
+          Login failed: {{errorMessage}}
+        </div>
+      </div>
+    </form>
+    <hr/>
+    <p>Don't have an account?</p>
+    <a href="signup" class="btn btn-success">Sign Up</a>
+  </div>
+  </mat-card-content>
+</mat-card>
+</div>

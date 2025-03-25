@@ -1,0 +1,30 @@
+.label-span {
+  margin: 20px;
+}
+
+#tname {
+  width: 30%;
+}
+
+#name {
+  height: 20px;
+}
+
+.form {
+  margin: 2em;
+}
+
+.nxt-btn {
+  margin: 5px;
+  height: 38px;
+  font-size: 18px;
+}
+
+#edt {
+  resize: both;
+  overflow: auto;
+}
+
+.migrateBtn {
+  margin: 0px 10px;
+}

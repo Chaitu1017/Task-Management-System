@@ -1,0 +1,23 @@
+.label-span {
+  margin: 20px;
+}
+
+.nxt-btn {
+  margin: 40px;
+  width: 20vw;
+  height: 5vh;
+  font-size: 20px;
+}
+
+#pname {
+  margin-top: 30px;
+  width: 30%;
+}
+
+.nxt-btn {
+  margin: 5px;
+  height: 38px;
+  font-size: 18px;
+  position: absolute;
+  right: 2em;
+}
